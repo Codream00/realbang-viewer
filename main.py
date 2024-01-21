@@ -217,4 +217,5 @@ async def download_models():
 
 
 # app.mount("/", StaticFiles(directory="gaussian-viewer-frontend/public", html=True), name="public")
-app.mount("/", StaticFiles(directory="realbang-viewer3", html=True), name="realbang-viewer3")
+app.mount("/viewer", StaticFiles(directory="realbang-viewer3", html=True), name="realbang-viewer3")
+app.mount("/static", StaticFiles(directory="static", html=True), name="static")
